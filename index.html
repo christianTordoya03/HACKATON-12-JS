@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Start</h1>
+    <!--Reto 1 - Dropdown-->
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown &#9660</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+        </div>
+    </div>
+    <!--Reto 2 - mostrar contenido-->
+    <div class="collapsible">
+        <button class="accordion">Collapsible Group Item #1</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, error neque ratione doloribus debitis id pariatur voluptatem impedit numquam amet provident earum repudiandae quod suscipit incidunt ab placeat reiciendis harum.</p>
+        </div>
+
+        <button class="accordion">Collapsible Group Item #2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro, nulla non qui quas aperiam iusto maiores error, asperiores necessitatibus officia minus quia labore pariatur? Beatae molestiae laudantium adipisci nulla!</p>
+        </div>
+
+        <button class="accordion">Collapsible Group Item #3</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat quae provident dolorem, eius incidunt mollitia vel atque debitis molestiae reprehenderit, ex consequatur officiis ratione ipsum quam aliquid necessitatibus itaque.</p>
+        </div>
+    </div>
+    <!--Reto 3 - modals-->
+    <div class="popup">
+        <button id="myBtn" class="dropbtn">Open Modal</button>
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Modal title</h1><hr>
+            <h2>Modal body text goes here</h2><hr>
+            <button onclick="functionClosed()" class="button-1">close</button>
+            <button onclick="functionAlert()" class="button-2">Save changes</button>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
